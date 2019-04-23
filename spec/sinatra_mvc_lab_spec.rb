@@ -9,9 +9,7 @@ describe "Pig Latinizer App" do
       expect(last_response.status).to eq(200)
     end
 
-    it "renders the instructions" do
-      expect(last_response.body).to include("Pig Latinizer!")
-    end
+    
 
     it "renders a new form element on the page" do
       expect(last_response.body).to include("<form")
